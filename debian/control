@@ -1,0 +1,39 @@
+Source: libwww-curl-simple-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Steffen Moeller <moeller@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libhttp-message-perl <!nocheck>,
+                     libmoose-perl <!nocheck>,
+                     libnamespace-clean-perl <!nocheck>,
+                     libnet-server-perl <!nocheck>,
+                     libscalar-list-utils-perl <!nocheck>,
+                     libtest-exception-perl <!nocheck>,
+                     libtest-simple-perl <!nocheck>,
+                     libwww-curl-perl <!nocheck>,
+                     perl
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libwww-curl-simple-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libwww-curl-simple-perl.git
+Homepage: https://metacpan.org/release/WWW-Curl-Simple
+Rules-Requires-Root: no
+
+Package: libwww-curl-simple-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libhttp-message-perl,
+         libmoose-perl,
+         libnamespace-clean-perl,
+         libscalar-list-utils-perl,
+         libwww-curl-perl
+Description: simpler interface to WWW::Curl
+ Curl and its cognate C library are a prominent solution
+ to download content from the Web. WWW::Curl
+ is very close to the original C API, and while
+ WWW::Curl::Easy makes it easier, indeed, it is only
+ with and WWW::Curl::Simple that you want to use
+ the library for a quick'n'simple single-liner
+ to retrieve a remote page.

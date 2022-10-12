@@ -1,0 +1,15 @@
+libwww-curl-simple-perl (0.100191-2) unstable; urgency=medium
+
+  * Team upload.
+  * Source-only re-upload.
+  * Lowercase short description.
+  * Set upstream metadata fields: Bug-Submit.
+  * Add a build dependency on libnet-server-perl to enable additional tests.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 04 Oct 2020 17:58:18 +0200
+
+libwww-curl-simple-perl (0.100191-1) unstable; urgency=low
+
+  * Initial release (Closes: #969904).
+
+ -- Steffen Moeller <moeller@debian.org>  Tue, 8 Sep 2020 16:15:57 +0200

@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_test:
+	# attention, t/10.simple.t and t/20.timeout.t fail
+	# in cowbuilder with (the non-default) USENETWORK=yes
+	dh_auto_test
